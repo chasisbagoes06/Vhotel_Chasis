@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/reservation.css" />
+
+    <title>Vhotel Reservation</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Vhotel</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="AboutUs.html" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="OurRooms.html" class="nav__link">Our Rooms</a>
+            </li>
+            <li class="nav__item">
+              <a href="OurFacilities.html" class="nav__link">Our Fasilities</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link active-link">Reservation</a>
+            </li>
+          </ul>
+
+          <i class="ri-close-line nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-function-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="about section" id="about">
+        <h1>Hotel Reservation</h1><br><br>
+        <form id="bookingForm">
+          <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" required />
+          </div>
+          <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" required />
+          </div>
+          <div>
+            <label for="checkin">Check-in Date: </label>
+            <input type="date" id="checkin" required />
+          </div>
+          <div>
+            <label for="checkout">Check-out Date: </label>
+            <input type="date" id="checkout" required />
+          </div>
+          <div>
+            <label for="roomType">Room Type: </label>
+            <select id="roomType" required>
+              <option value="">Select a room type</option>
+              <option value="single">Deluxe Room</option>
+              <option value="double">Executive Suite</option>
+              <option value="suite">Grand Suite</option>
+              <option value="suite">Penthouse Suite</option>
+              <option value="suite">Family Suite</option>
+              <option value="suite">Presidential Suite</option>
+              <option value="suite">Spa Suite</option>
+              <option value="suite">Signature Suite</option>
+            </select>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div class="footer__data">
+            <h3 class="footer__title">Vhotel</h3>
+            <p class="footer__description">
+              Welcome to Vhotel<br />
+              Where Luxury Meets<br />
+              Comfort
+            </p>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">About</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="AboutUs.html" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="OurRooms.html" class="footer__link">Our Rooms</a>
+              </li>
+              <li class="footer__item">
+                <a href="OurFacilities.html" class="footer__link"
+                  >Our Facilities</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="Reservation.html" class="footer__link">Reservation</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">Our Partner</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="" class="footer__link">BNI</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Gopay</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Dana</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__rights">
+          <p class="footer__copy">&#169; 2023 VhoTel. All rigths reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/reservation.js"></script>
+  </body>
+</html>
